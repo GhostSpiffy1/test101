@@ -16,7 +16,7 @@
     .estimate-btn { margin-top: 25px; background-color: gold; border: none; color: #000; padding: 12px 24px; border-radius: 5px; font-size: 16px; cursor: pointer; }
     .estimate-btn:hover { background-color: #f0c000; }
 
-    .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .section { padding: 10px 20px; max-width: 1100px; margin: auto; }
     .section h2 { text-align: center; font-size: 28px; margin-bottom: 40px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
 
     .services-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
@@ -87,31 +87,30 @@
   </section>
 
   <section class="section">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>“Professional, reliable, and top-quality work. Highly recommended!”</p>
-      <span>— Samantha K., Toronto</span>
-    </div>
-    <div class="testimonial">
-      <p>“These guys crushed it. On time, on budget, and super clean finish.”</p>
-      <span>— Mike T., Durham</span>
-    </div>
-    <div class="review-form">
-      <form action="https://formspree.io/f/mnnpepwv" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <select name="rating" required>
-          <option value="">Rate Us</option>
-          <option value="5 Stars">⭐⭐⭐⭐⭐</option>
-          <option value="4 Stars">⭐⭐⭐⭐</option>
-          <option value="3 Stars">⭐⭐⭐</option>
-          <option value="2 Stars">⭐⭐</option>
-          <option value="1 Star">⭐</option>
-        </select>
-        <textarea name="message" rows="5" placeholder="Your Review" required></textarea>
-        <button type="submit">Submit Review</button>
-      </form>
-    </div>
-  </section>
+  <h2>What Our Clients Say</h2>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <p style="margin-bottom: 5px;">“Professional, reliable, and top-quality work. Highly recommended!”</p>
+    <span style="font-weight: bold;">— Samantha K., Toronto</span>
+  </div>
+  <div style="text-align: center; margin-bottom: 40px;">
+    <p style="margin-bottom: 5px;">“These guys crushed it. On time, on budget, and super clean finish.”</p>
+    <span style="font-weight: bold;">— Mike T., Durham</span>
+  </div>
+
+  <form action="https://formspree.io/f/mnnpepwv" method="POST" style="max-width: 600px; margin: 0 auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+    <select name="rating" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+      <option value="">Rate Us</option>
+      <option value="5 Stars">⭐⭐⭐⭐⭐</option>
+      <option value="4 Stars">⭐⭐⭐⭐</option>
+      <option value="3 Stars">⭐⭐⭐</option>
+      <option value="2 Stars">⭐⭐</option>
+      <option value="1 Star">⭐</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="Your Review" required style="width: 100%; padding: 10px; margin-bottom: 6px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
+    <button type="submit" style="width: 100%; background: #222; color: #fff; padding: 10px; border: none; border-radius: 6px; cursor: pointer;">Submit Review</button>
+  </form>
+</section>
 
   <section class="section">
     <h2>Serving Toronto & Durham Region</h2>
@@ -119,15 +118,16 @@
   </section>
 
   <section id="contact" class="section">
-    <h2>Request a Free Estimate</h2>
-    <p style="text-align:center; margin-bottom: 40px;">We’ll get back to you within 24 hours</p>
-    <form action="https://formspree.io/f/mnnpepwv" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <h2>Request a Free Estimate</h2>
+  <p style="text-align:center; margin-bottom: 40px;">We’ll get back to you within 24 hours</p>
+
+  <form action="https://formspree.io/f/mnnpepwv" method="POST" style="max-width: 600px; margin: 0 auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;" />
+    <textarea name="message" rows="4" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 6px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;"></textarea>
+    <button type="submit" style="width: 100%; background: #222; color: #fff; padding: 10px; border: none; border-radius: 6px; cursor: pointer;">Send Message</button>
+  </form>
+</section>
 
   <footer>
     &copy; 2025 All You Can Concrete. All rights reserved.
